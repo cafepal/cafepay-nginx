@@ -1,0 +1,15 @@
+{
+    "platform": "docker",
+    "app": "cpfy-nginx",
+    "port": 80,
+    "disks": [
+      {
+        "name": "cafepay-nginx-disk",
+        "mountTo": "/etc/nginx"
+      },
+      {
+        "name": "cafepay-nginx-var-disk",
+        "mountTo": "/var"
+      }
+    ]
+}
