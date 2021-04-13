@@ -1,6 +1,4 @@
 FROM nginx
-COPY cafepay.conf /etc/nginx/conf.d
-COPY cfpy.conf /etc/nginx/conf.d
+COPY nginx.conf /etc/nginx/nginx.conf
+COPY cafepay.conf /etc/nginx/conf.d/cafepay.conf
 EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
